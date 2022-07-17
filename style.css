@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Caslon, sans-serif;
+  background-image: linear-gradient(to right, #ff9966, #e56b6e96);
+  min-height: 100vh;
+}
+
+form,
+.heading {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+}
+input.input {
+  width: 210px;
+}
+form input,
+form button {
+  border: none;
+  padding: 0.7rem;
+  border-radius: 20px;
+}
+form button {
+  color: #ff3800;
+  background: white;
+  cursor: pointer;
+  border-radius: 15px;
+}
+form button:hover {
+  background: #ff3800;
+  color: white;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  list-style: none;
+  min-width: 30%;
+}
+.todo {
+  background-color: white;
+  margin: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+.todo li {
+  display: flex;
+  flex: 1;
+}
+.complete-btn,
+.trash-btn {
+  background: #ff3800;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 1s ease;
+}
+.complete-btn {
+  background: #58df9b;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.completed {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 0.1rem;
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in-out;
+}
